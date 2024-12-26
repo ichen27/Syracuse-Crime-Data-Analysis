@@ -2,15 +2,15 @@ Ivan Chen
 Syracuse Crime Analysis
 
 
-#Introduction:
+Introduction:
 
 	As a Syracuse University student and a resident in upstate NY, the health of my local communities is of great importance to me. The city of Syracuse consistently ranks as one of the most dangerous cities in New York, with a violent crime rate of around 891 incidents per 100,000 people, which is currently the third highest in the state. From my own personal experiences, I've noticed many Syracuse University students feel unsafe to venture beyond the confines of the campus. This is a major issue and as a community, we need to take actionable steps towards fixing this issue. Before we can do that though, we need to understand this problem. We need to understand the ins and outs of this problem; what time of day do we see the most crime? What time of the year is crime most common? Where in the city is crime most common? And more. These are questions that need to be answered before we can take any actionable steps towards fixing this issue and building a safer tomorrow. 
 
-#Data Summary:
+Data Summary:
 
 	This report presents an exploratory data analysis of crime data spanning from 2020 to 2024. This analysis aims to identify patterns and provide key insights to improve public safety. The dataset that this analysis is based on consists of 40,151 records detailing crime incidents, categorized by type, time, and location. 
 
-#Exploratory data analysis:
+Exploratory data analysis:
 ![crime-type](https://github.com/user-attachments/assets/a753c6ef-bd51-4691-83c5-387f2a6637c1)
 Observation: The pie chart categorizes crimes into types, with the largest proportions being Larceny (21%), Simple Assault (20%), and Other Offences (15%).
 Analysis:
@@ -137,7 +137,7 @@ Install more surveillance cameras and street lighting in high-crime areas.
 Conduct community outreach programs in these zones to raise awareness and improve safety.
 
 
-#Conclusion
+Conclusion
 This analysis identifies key areas for action to reduce crime and improve public safety. Geospatial data highlights urban centers and high-traffic areas as major crime hotspots, suggesting the need for targeted interventions, such as deploying additional law enforcement, installing surveillance cameras, and improving lighting in these zones. Community engagement programs, such as neighborhood watch groups, can also play a vital role in deterring crime in these areas.
 Temporal trends reveal that crime rates peak during spring and summer months, particularly in March, April, and August, which indicates the importance of allocating resources seasonally. Law enforcement presence should be increased during these months, while community programs and public awareness campaigns can help address the root causes of these spikes. The end-of-month and end-of-year declines in crime suggest that administrative factors or behavioral changes may influence reporting, which can be addressed by ensuring consistent reporting mechanisms.
 The breakdown of crime types emphasizes the need to combat larceny and simple assault, which together account for a significant proportion of crimes. Theft prevention programs, public education on securing personal and business property, and partnerships with local businesses can help reduce larceny. Simultaneously, addressing interpersonal violence through community education and conflict resolution programs can reduce assaults.
