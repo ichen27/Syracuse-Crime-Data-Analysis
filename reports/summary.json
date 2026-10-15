@@ -1,0 +1,485 @@
+{
+  "audit": {
+    "database_sha256": "1ca006988625cddc35f03c0c64154a817e357d9edcee6792a4eea2e8507046d9",
+    "requested_start": "2020-01-01",
+    "requested_end": "2024-12-31",
+    "raw_rows": 55851,
+    "retained_rows": 55779,
+    "excluded_rows": 72,
+    "tables": [
+      {
+        "table": "crime_2020_1",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 5266,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 0,
+        "retained_rows": 5266,
+        "first_date": "2020-01-01",
+        "last_date": "2020-12-29"
+      },
+      {
+        "table": "crime_2020_2",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 8014,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 55,
+        "retained_rows": 7959,
+        "first_date": "2020-01-01",
+        "last_date": "2020-12-31"
+      },
+      {
+        "table": "crime_2021_1",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 5129,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 0,
+        "retained_rows": 5129,
+        "first_date": "2021-01-01",
+        "last_date": "2021-12-31"
+      },
+      {
+        "table": "crime_2021_2",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 6949,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 6,
+        "retained_rows": 6943,
+        "first_date": "2020-01-01",
+        "last_date": "2022-01-01"
+      },
+      {
+        "table": "crime_2022_1",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 5660,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 0,
+        "retained_rows": 5660,
+        "first_date": "2022-01-01",
+        "last_date": "2022-12-31"
+      },
+      {
+        "table": "crime_2022_2",
+        "label_column": "CODE DEFINED",
+        "raw_rows": 6709,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 9,
+        "retained_rows": 6700,
+        "first_date": "2020-02-29",
+        "last_date": "2022-12-31"
+      },
+      {
+        "table": "crime_2023_1",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 6633,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 0,
+        "retained_rows": 6633,
+        "first_date": "2022-12-25",
+        "last_date": "2023-12-26"
+      },
+      {
+        "table": "crime_2023_2",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 6693,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 2,
+        "retained_rows": 6691,
+        "first_date": "2020-03-19",
+        "last_date": "2023-12-31"
+      },
+      {
+        "table": "crime_2024_1",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 2358,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 0,
+        "retained_rows": 2358,
+        "first_date": "2024-01-01",
+        "last_date": "2024-05-20"
+      },
+      {
+        "table": "crime_2024_2",
+        "label_column": "CODE_DEFINED",
+        "raw_rows": 2440,
+        "invalid_date": 0,
+        "missing_category": 0,
+        "outside_window": 0,
+        "retained_rows": 2440,
+        "first_date": "2021-01-22",
+        "last_date": "2024-05-27"
+      }
+    ],
+    "skipped_tables": [
+      "crime_2019_1"
+    ],
+    "date_policy": "Preserve the calendar date written in DATEEND; no timezone conversion.",
+    "unit": "Source records, not verified unique incidents or population-adjusted rates.",
+    "duplicate_policy": "Retain records; no stable cross-table incident identifier."
+  },
+  "annual_record_counts": {
+    "2020": 13284,
+    "2021": 12051,
+    "2022": 12335,
+    "2023": 13330,
+    "2024": 4779
+  },
+  "category_counts": {
+    "LARCENY": 12135,
+    "SIMPLE ASSAULT": 11453,
+    "CRIMINAL MISCHIEF": 8259,
+    "BURGLARY": 4494,
+    "OFFN AGAINST FAMILY": 3933,
+    "AGGRAVATED ASSAULT": 3920,
+    "MV THEFT": 3201,
+    "POSSESSION/USE DANGEROUS WEAPONS": 2162,
+    "ALL OTHER OFFENSES": 1783,
+    "ROBBERY": 1134,
+    "POSSESSION/MARIJUANA": 1113,
+    "POSSESSION/USE DRUG": 803,
+    "FRAUD": 367,
+    "DRIVING UNDER INFLUENCE": 313,
+    "KIDNAPPING": 123,
+    "DISORDERLY CONDUCT": 111,
+    "FORGERY/COUNTERFEIT": 104,
+    "RAPE": 89,
+    "STOLEN PROPERTY": 76,
+    "MURDER": 73,
+    "UNAUTHORIZED USE MV": 66,
+    "PROSTITUTION PATRON/PROMOTING": 18,
+    "EXTORTION": 13,
+    "COERCION": 11,
+    "LOITERING": 10,
+    "SALE/MANUFACTURE MARIJUANA": 7,
+    "SALE/MANUFACTURE CONTROLLED SUBSTANCE": 4,
+    "LIQUOR LAW VIOLATIONS": 3,
+    "BRIBERY": 1
+  },
+  "comparison_window": {
+    "start": "2020-01-01",
+    "end": "2023-12-31"
+  },
+  "calendar_summaries": {
+    "month": [
+      {
+        "month": 1,
+        "records": 3963,
+        "calendar_days": 124,
+        "records_per_day": 31.95967741935484
+      },
+      {
+        "month": 2,
+        "records": 3528,
+        "calendar_days": 113,
+        "records_per_day": 31.221238938053098
+      },
+      {
+        "month": 3,
+        "records": 4122,
+        "calendar_days": 124,
+        "records_per_day": 33.24193548387097
+      },
+      {
+        "month": 4,
+        "records": 3920,
+        "calendar_days": 120,
+        "records_per_day": 32.666666666666664
+      },
+      {
+        "month": 5,
+        "records": 4383,
+        "calendar_days": 124,
+        "records_per_day": 35.346774193548384
+      },
+      {
+        "month": 6,
+        "records": 4544,
+        "calendar_days": 120,
+        "records_per_day": 37.86666666666667
+      },
+      {
+        "month": 7,
+        "records": 4804,
+        "calendar_days": 124,
+        "records_per_day": 38.74193548387097
+      },
+      {
+        "month": 8,
+        "records": 4977,
+        "calendar_days": 124,
+        "records_per_day": 40.13709677419355
+      },
+      {
+        "month": 9,
+        "records": 4500,
+        "calendar_days": 120,
+        "records_per_day": 37.5
+      },
+      {
+        "month": 10,
+        "records": 4568,
+        "calendar_days": 124,
+        "records_per_day": 36.83870967741935
+      },
+      {
+        "month": 11,
+        "records": 4085,
+        "calendar_days": 120,
+        "records_per_day": 34.041666666666664
+      },
+      {
+        "month": 12,
+        "records": 3606,
+        "calendar_days": 124,
+        "records_per_day": 29.080645161290324
+      }
+    ],
+    "dayofweek": [
+      {
+        "dayofweek": 0,
+        "records": 7381,
+        "calendar_days": 208,
+        "records_per_day": 35.48557692307692
+      },
+      {
+        "dayofweek": 1,
+        "records": 7344,
+        "calendar_days": 208,
+        "records_per_day": 35.30769230769231
+      },
+      {
+        "dayofweek": 2,
+        "records": 7170,
+        "calendar_days": 209,
+        "records_per_day": 34.30622009569378
+      },
+      {
+        "dayofweek": 3,
+        "records": 7153,
+        "calendar_days": 209,
+        "records_per_day": 34.22488038277512
+      },
+      {
+        "dayofweek": 4,
+        "records": 7088,
+        "calendar_days": 209,
+        "records_per_day": 33.91387559808612
+      },
+      {
+        "dayofweek": 5,
+        "records": 7450,
+        "calendar_days": 209,
+        "records_per_day": 35.645933014354064
+      },
+      {
+        "dayofweek": 6,
+        "records": 7414,
+        "calendar_days": 209,
+        "records_per_day": 35.473684210526315
+      }
+    ],
+    "day": [
+      {
+        "day": 1,
+        "records": 1758,
+        "calendar_days": 48,
+        "records_per_day": 36.625
+      },
+      {
+        "day": 2,
+        "records": 1718,
+        "calendar_days": 48,
+        "records_per_day": 35.791666666666664
+      },
+      {
+        "day": 3,
+        "records": 1611,
+        "calendar_days": 48,
+        "records_per_day": 33.5625
+      },
+      {
+        "day": 4,
+        "records": 1691,
+        "calendar_days": 48,
+        "records_per_day": 35.229166666666664
+      },
+      {
+        "day": 5,
+        "records": 1726,
+        "calendar_days": 48,
+        "records_per_day": 35.958333333333336
+      },
+      {
+        "day": 6,
+        "records": 1705,
+        "calendar_days": 48,
+        "records_per_day": 35.520833333333336
+      },
+      {
+        "day": 7,
+        "records": 1663,
+        "calendar_days": 48,
+        "records_per_day": 34.645833333333336
+      },
+      {
+        "day": 8,
+        "records": 1649,
+        "calendar_days": 48,
+        "records_per_day": 34.354166666666664
+      },
+      {
+        "day": 9,
+        "records": 1618,
+        "calendar_days": 48,
+        "records_per_day": 33.708333333333336
+      },
+      {
+        "day": 10,
+        "records": 1713,
+        "calendar_days": 48,
+        "records_per_day": 35.6875
+      },
+      {
+        "day": 11,
+        "records": 1752,
+        "calendar_days": 48,
+        "records_per_day": 36.5
+      },
+      {
+        "day": 12,
+        "records": 1617,
+        "calendar_days": 48,
+        "records_per_day": 33.6875
+      },
+      {
+        "day": 13,
+        "records": 1763,
+        "calendar_days": 48,
+        "records_per_day": 36.729166666666664
+      },
+      {
+        "day": 14,
+        "records": 1671,
+        "calendar_days": 48,
+        "records_per_day": 34.8125
+      },
+      {
+        "day": 15,
+        "records": 1635,
+        "calendar_days": 48,
+        "records_per_day": 34.0625
+      },
+      {
+        "day": 16,
+        "records": 1722,
+        "calendar_days": 48,
+        "records_per_day": 35.875
+      },
+      {
+        "day": 17,
+        "records": 1663,
+        "calendar_days": 48,
+        "records_per_day": 34.645833333333336
+      },
+      {
+        "day": 18,
+        "records": 1706,
+        "calendar_days": 48,
+        "records_per_day": 35.541666666666664
+      },
+      {
+        "day": 19,
+        "records": 1608,
+        "calendar_days": 48,
+        "records_per_day": 33.5
+      },
+      {
+        "day": 20,
+        "records": 1704,
+        "calendar_days": 48,
+        "records_per_day": 35.5
+      },
+      {
+        "day": 21,
+        "records": 1740,
+        "calendar_days": 48,
+        "records_per_day": 36.25
+      },
+      {
+        "day": 22,
+        "records": 1716,
+        "calendar_days": 48,
+        "records_per_day": 35.75
+      },
+      {
+        "day": 23,
+        "records": 1683,
+        "calendar_days": 48,
+        "records_per_day": 35.0625
+      },
+      {
+        "day": 24,
+        "records": 1652,
+        "calendar_days": 48,
+        "records_per_day": 34.416666666666664
+      },
+      {
+        "day": 25,
+        "records": 1660,
+        "calendar_days": 48,
+        "records_per_day": 34.583333333333336
+      },
+      {
+        "day": 26,
+        "records": 1713,
+        "calendar_days": 48,
+        "records_per_day": 35.6875
+      },
+      {
+        "day": 27,
+        "records": 1632,
+        "calendar_days": 48,
+        "records_per_day": 34.0
+      },
+      {
+        "day": 28,
+        "records": 1599,
+        "calendar_days": 48,
+        "records_per_day": 33.3125
+      },
+      {
+        "day": 29,
+        "records": 1523,
+        "calendar_days": 45,
+        "records_per_day": 33.84444444444444
+      },
+      {
+        "day": 30,
+        "records": 1470,
+        "calendar_days": 44,
+        "records_per_day": 33.40909090909091
+      },
+      {
+        "day": 31,
+        "records": 919,
+        "calendar_days": 28,
+        "records_per_day": 32.82142857142857
+      }
+    ]
+  },
+  "limitations": [
+    "2024 is partial; it is excluded from seasonality comparisons.",
+    "Calendar denominators assume coverage throughout 2020\u20132023; zero rows do not prove zero incidents.",
+    "Reporting and collection completeness are not independently verified.",
+    "Record counts do not measure individual risk, causality, or crime rates per resident.",
+    "No trustworthy incident-hour or coordinates are available consistently across the snapshot."
+  ]
+}
