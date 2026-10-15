@@ -14,7 +14,8 @@ TABLE_PATTERN = re.compile(r"crime_(\d{4})_([12])\Z")
 def parse_date(value):
     """Preserve the source calendar date; offset conventions differ across tables.
 
-    DATEEND is an end date, not a trustworthy incident hour. Never convert mixed
+    The city defines 2023 DATEEND as date reported; earlier semantics and
+    publication timing remain unverified. Never convert mixed
     midnight conventions to New York time, which would shift some dates backward.
     """
     if not isinstance(value, str) or not value.strip():

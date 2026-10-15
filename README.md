@@ -10,10 +10,10 @@ Read the [findings](reports/findings.md), [machine-readable audit](reports/summa
 
 ## Quickstart
 
-Requires Git and Python 3.12 (recommended). From a fresh checkout:
+Requires Git and Python 3.12 (recommended). From a fresh checkout of the current PR branch:
 
 ```bash
-git clone https://github.com/ichen27/Syracuse-Crime-Data-Analysis.git
+git clone --branch feat/reproducible-crime-analysis https://github.com/ichen27/Syracuse-Crime-Data-Analysis.git
 cd Syracuse-Crime-Data-Analysis
 python3 -m venv .venv
 source .venv/bin/activate
@@ -38,7 +38,7 @@ On Windows activate with `.venv\Scripts\activate`. The command runs without a di
 
 The original project attributes the data to public Syracuse crime records. The historical acquisition script contains an ArcGIS service URL, but there is no complete acquisition manifest or verified completeness record for this snapshot. The 2019 script lacks pagination; it is archived and is not a supported refresh mechanism. Data provenance and collection coverage need verification before expanding the dataset.
 
-These are **source records**, not verified unique incidents or population-adjusted crime rates. Multiple records with the same date and category are retained because they can be legitimate separate events. The available IDs do not establish cross-table identity. Calendar exposure assumes coverage throughout 2020–2023; an empty date cannot establish that no crime occurred. `DATEEND` is an end date, not a reliable incident hour. No consistent coordinates are available for a defensible map. These descriptive results do not establish causality, neighborhood risk, or the effectiveness of an intervention.
+These are **source records**, not verified unique incidents or population-adjusted crime rates. Multiple records with the same date and category are retained because they can be legitimate separate events. The available IDs do not establish cross-table identity. Calendar exposure assumes coverage throughout 2020–2023; an empty date cannot establish that no crime occurred. The city’s [2023 Part 1 metadata](https://www.arcgis.com/sharing/rest/content/items/94bc33f1a2c646b995d1ab356edf0730/info/metadata/metadata.xml?format=default&output=html) defines `DATEEND` as the date reported, correcting the earlier incident-end-date description. Historical publication/revision timing remains unknown, and identical semantics across older tables have not been verified. Coordinates are not available consistently across all years. These descriptive results do not establish causality, neighborhood risk, or the effectiveness of an intervention.
 
 The [original notebook and scripts](legacy/) are preserved for historical context. Their old results and unsupported interpretations are superseded by the audited reports; they are outside the maintained execution path.
 
@@ -55,3 +55,7 @@ CI runs these checks on pushes and pull requests. Tests cover the spaced column 
 ## Attribution and licensing
 
 Original analysis: Ivan Chen. Third-party packages retain their respective licenses. This repository did not specify a code or dataset license; this update does not grant new redistribution rights. Verify source terms and obtain a license decision before redistribution or a licensed release.
+
+## Source-tail follow-up
+
+An October 15, 2026 query of the city’s 2023 Part 1 service matches the original database’s December larceny daily counts and also ends December 26, with four records in December 25–31. This confirms the sparse tail is present in the served source; it does not establish whether the remaining days were missing or had zero records. See the model repository’s [dated aggregate audit](https://github.com/ichen27/Temporal-Crime-Prediction-Classification-Model-w-Random-Forest-/blob/feat/temporal-model-evaluation/reports/smoothing/source-audit.json). The original database and loader behavior are unchanged.
